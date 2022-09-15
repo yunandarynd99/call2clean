@@ -41,22 +41,22 @@
 // document.querySelector("#prev").onclick = prev;
 // document.querySelector("#next").onclick = next;
 
-setInterval(next, 2000);
+// setInterval(next, 2000);
 
-let pic = 1;
+// let pic = 1;
 
-function prev() {
-    document.querySelector("#pic" + pic).style.display = "none";
-    pic--;
-    if(pic < 1) pic = 6;
-    document.querySelector("#pic" + pic).style.display = "block";
-}
+// function prev() {
+//     document.querySelector("#pic" + pic).style.display = "none";
+//     pic--;
+//     if(pic < 1) pic = 6;
+//     document.querySelector("#pic" + pic).style.display = "block";
+// }
 
-function next() {
-    document.querySelector("#pic" + pic).style.display = "none";
-    pic++;
-    if(pic > 6) pic = 1;
-    document.querySelector("#pic" + pic).style.display = "block";
-}
+// function next() {
+//     document.querySelector("#pic" + pic).style.display = "none";
+//     pic++;
+//     if(pic > 6) pic = 1;
+//     document.querySelector("#pic" + pic).style.display = "block";
+// }
 
 
