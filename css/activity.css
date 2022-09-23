@@ -148,7 +148,7 @@ a{
 /*activity*/
 .activity{
   padding-top: 140px;
-  height: 640px;
+  height: 688px;
   border-bottom: 2px double skyblue;
 }
 
@@ -331,8 +331,8 @@ img{
   font-weight:bold;
   color:white;
   cursor: pointer;
-  padding-top: 130px;
-  margin-right: 380px;
+  padding-top: 156px;
+  margin-right: 445px;
   }
   .container1 {
   width:200px;
@@ -356,6 +356,54 @@ img{
       from {transform:scale(0)} 
       to {transform:scale(1)}
   }
+
+  /* csr */
+  .csr{
+    padding-top: 20px;
+    height: 740px;
+    border-bottom: 2px solid skyblue;
+  }
+
+  .csr-text h3{
+    font-size: 30px;
+    color: rgb(237, 59, 59);
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+  }
+
+  .csr-img{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+    grid-gap: 5em;
+    align-items: center;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    margin-right: 100px;
+  }
+
+  .box{
+    height: 250px;
+    padding: 20px 35px;
+    border-radius: 30px;
+    margin: -3px;
+    position: relative;
+    text-align: center;
+  }
+
+  .box img{
+    width: 447px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .box p{
+    font-size: 20px;
+    color: black;
+  }
+
+  
 
 
 /* footer */
@@ -397,6 +445,14 @@ img{
     color: black;
 }
 
+.join p{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.join h5{
+  font-size: 18px;
+}
 
 .contact {
     display: flex;
@@ -418,6 +474,7 @@ img{
 
 .contact a{
     color: black;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -428,6 +485,6 @@ img{
 
 .phone h5{
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
