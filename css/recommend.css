@@ -34,6 +34,10 @@ body{
   border-radius: 0;
 }
 
+#img2 , #img3 , #img4 {
+  display: none;
+}
+
 /*logo*/
 header{
   width: 100%;
@@ -88,7 +92,7 @@ header{
   /* margin-right: 20px; */
   margin: 10px auto;
   margin-right: 2px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 
 .login a{
@@ -211,15 +215,6 @@ a{
   font-size: 18px;
 }
 
-/* .verticle-line{
-  width: 200px;
-  height: 1px;
-  color: black;
-}
-.verticle-line a{
-  margin-top: 30px;
-} */
-
 
 .join {
   color: black;
@@ -255,8 +250,178 @@ a{
   font-size: 20px;
 }
 
-.phone h5{
+.phone span{
   color: black;
   font-size: 18px;
   font-weight: 500;
+}
+
+@media (max-width: 425px){
+  /* header{
+    height: 80px;
+    background: linear-gradient(360deg, #f6d322, #178407);
+} */
+  .bar img{
+    width: 100%;
+    display: none;
+}
+
+#img2 , #img3 , #img4 {
+  display: block;
+}
+
+#img3{
+  width: 160px;
+  margin-left: 265px;
+  padding-top: 55px;
+  height: 108px;
+}
+
+#img4{
+  width: 160px;
+  padding-top: 50px;
+  height: 110px;
+  margin-left: 50px;
+}
+
+  .navbar a{
+    display: none;
+}
+
+.navbar{
+    width: 425px;
+    position: absolute;
+    top: -700px;
+    flex-direction: column;
+    background: #f6d322;
+    transition: all .30s;
+    margin: auto;
+}
+
+.navbar a{
+  display: block;
+  padding: -1.1rem;
+  margin-left: -265px;
+}
+
+.navbar a:hover{
+    background: burlywood;
+}
+.navbar.active{
+    top: 100%;
+}
+
+  #menu-icon{
+    font-size: 32px;
+    color: var(--text-color);
+    cursor: pointer;
+    margin-top: 60px;
+    display: block;
+    margin-left: 4px;
+  }
+  .login{
+    display: flex;
+    /* padding-top: 5px; */
+    margin-left: 215px;
+}
+
+
+.login a{
+margin-right: 28px;
+}
+
+.recommend{
+  padding-top: 135px;
+}
+
+
+  .box img{
+    width: 300px;
+    height: 400px;
+    margin-left: 65px;
+  }
+
+  .contact a{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.phone span{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+}
+
+@media (min-width:426px) and (max-width: 768px){
+  .login{
+    margin-left: 300px !important;
+  }
+
+  .box img{
+    margin-left: 80px !important;
+  }
+}
+
+@media(min-width: 426px) and (max-width: 1024px){
+  .bar img{
+    width: 100%;
+  }
+  .navbar a{
+    display: none;
+  }
+
+  .navbar{
+      width: 100%;
+      position: absolute;
+      top: -700px;
+      flex-direction: column;
+      background: #f6d322;
+      transition: all .30s;
+      margin: auto;
+  }
+
+  .navbar a{
+      display: block;
+      padding: -1.1rem;
+      margin-left: -265px;
+  }
+
+  .navbar a:hover{
+      background: burlywood;
+  }
+  .navbar.active{
+      top: 100%;
+  }
+
+  #menu-icon{
+    font-size: 32px;
+    color: var(--text-color);
+    cursor: pointer;
+    margin-top: 70px;
+    display: block;
+    margin-left: 246px;
+}
+
+.login{
+    margin-left: 543px;
+    padding-top: 0px !important;
+}
+
+.footer-item{
+  padding:33px;
+}
+
+.footer-text h3 {
+  margin-left: -100px;
+  font-size: 35px;
+}
+
+.contact{
+  margin-left: 200px;
+}
+
+.footer-item{
+  grid-template-columns: repeat(auto-fit, minmax(325px, auto));
+}
 }

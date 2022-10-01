@@ -1,6 +1,6 @@
 *
 {
-    padding: 0%;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -36,8 +36,12 @@ body{
     border-radius: 0;
 }
 
+#img2 , #img3 , #img4 {
+    display: none;
+}
+
 /*logo*/
-header{
+.header{
     width: 100%;
     top: 0;
     right: 0;
@@ -89,9 +93,6 @@ header{
 }
 
  .login{
-    /* margin-right: 20px; */
-    /* padding-top: 4px; */
-    margin: 10px auto;
     margin-right: 2px;
     padding-top: 10px;
 }  
@@ -115,141 +116,6 @@ a{
     padding: 5px;
 }
 
-/* .content-email{
-    position: absolute;
-    right: 26px;
-    top: 43px;
-    width: auto;
-    color: yellow;
-    font-size: 13px;
-}
-
-.content-email img{
-    width: 30px;
-    margin-right: 10px;
-} */
-
-/* .icon, .content-text{
-    display: table-cell;
-    vertical-align: middle;
-} */
-
-/* .content-email img,  */
-/* .content-phone img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 100%;
-}
-
-.content-phone img{
-    width: 30px!important;
-}
-
-.content-phone{
-    position: absolute;
-    right: -55px;
-    top: 60px;
-    min-width: 280px;
-    color: yellow;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.content-phone img{
-    width: 35px;
-    margin-right: 10px;
-} */
-
-
-/* .wrapper{
-    position: flex;
-}
-
-.modalForm{
-    display: flex;
-    
-}
-
-.actionBtns{
-    right: -97px;
-    position: relative;
-    margin-top: 45px;
-}
-
-.actionBtn:hover{
-    background-color: var(--bg-color);
-    width: auto;
-    padding: 6px;
-}
-
-.actionBtn{
-    width: 50px;
-    height: 30px;
-    border: none;
-    background-color: transparent;
-    border-radius: 30px;
-    color: var(--text-color);
-    font-size: 15px;
-    cursor: pointer;
-    margin-right: 20px;
-    padding: 10px auto;
-    
-} */
-
-/* .inputGroup{
-    width: 300px;
-    margin: 0.8rem 0;
-    background-color: whitesmoke;
-}
-
-.inputGroup input{
-    width: 100%;
-    padding: 1em 1.5em;
-    background-color: transparent;
-    border: none;
-    border-radius: 50px;
-}
-
-.inputGroup input:focus{
-    outline: none;
-}
-
-.submitBtn{
-    width: 150px;
-    padding: 1em;
-    margin: 2em 0;
-    text-align: center;
-    border-radius: 50px;
-    border: none;
-    outline: none;
-    background-color: whitesmoke;
-    box-shadow: whitesmoke;
-    cursor: pointer;
-    font-size: 0.8em;
-    font-weight: 600;
-}
-
-.submitBtn:hover{
-    background-color: royalblue;
-    color: wheat;
-    transition: all 0.3s ease-in-out;
-}
-
-.form{
-    display: none;
-} */
-
-/*.signupForm{
-    display: block;
-}
-
-.loginForm{
-    display: block;
-}
-
-.moveBtn{
-    display: none;
-}*/
 
 /*home*/
 .home{
@@ -257,65 +123,6 @@ a{
     width: 100%;
     height: 680px;
 }
-
-
-/* .slider{
-    width: 100%;
-    position:absolute;
-    float:right;
-    animation: rotate 15s infinite linear;
-    transform-style:inherit;
-}
-
-
-.slider figure{
-    border:1px solid #555;
-    overflow:hidden;
-    position:absolute;
-}
-
-
-
-.slider img{
-    image-rendering: auto;
-    transition: all 300ms;
-    width: 100%;
-    height: 650px;
-}
-
-.shadow{ 
-    position: absolute; 
-    box-shadow: 0px 0px 0px #000; 
- }
-
- .slider figure:nth-child(1){
-    transform:rotateY(0deg) translateZ(300px);
-  }
-   
-.slider figure:nth-child(2){
-    transform:rotateY(40deg) translateZ(300px);
-}
-.slider figure:nth-child(3){
-    transform:rotateY(80deg) translateZ(300px);
-}
-.slider figure:nth-child(4){
-    transform:rotateY(120deg) translateZ(300px);
-}
-.slider figure:nth-child(5){
-    transform:rotateY(160deg) translateZ(300px);
-}
-.slider figure:nth-child(6){
-    transform:rotateY(200deg) translateZ(300px);
-}
-
-@keyframes rotate {
-    from{
-    transform: rotateY(0deg);
-    }
-    to{
-    transform: rotateY(360deg);
-    }
-} */
 
 .auto-slider{
     position: relative;
@@ -393,7 +200,7 @@ div#slider figure {
 .work h1{
     color: black;
     font-size: 50px;
-    width: 1000px;
+    /* width: 100%; */
     margin: -60px auto;
     text-align: center;
 }
@@ -441,7 +248,7 @@ div#slider figure {
 .about h1{
     color: black;
     font-size: 50px;
-    width: 1000px;
+    /* width: 1000px; */
     margin: -60px auto;
     text-align: center;
 }
@@ -454,7 +261,7 @@ div#slider figure {
     margin-inline-end: 0px;
     color: black;
     font-size: 20px;
-    width: 1000px;
+    /* width: 1000px; */
     margin: 0 auto;
     text-align: justify;
     padding-top: 95px;
@@ -490,19 +297,6 @@ div#slider figure {
     width: 100%;
     height: 250px;
 }
-/* .partner {
-    width: 100%;
-    height: 170px;
-    position: relative;
-    text-align: center;
-    display: flex;
-    z-index: 1;
-    padding-top: 17px;
-}
-
-.partner img{
-    border-radius: 10px;
-} */
 
 .partner {
     --color-text: navy;
@@ -647,7 +441,7 @@ div#slider figure {
 .service h1{
     color: white;
     font-size: 50px;
-    width: 1000px;
+    /* width: 1000px; */
     margin: 80px auto;
     text-align: center;
     padding-top: 20px;
@@ -743,15 +537,6 @@ div#slider figure {
     color: black;
 }
 
-/* .verticle-line{
-    width: 200px;
-    height: 1px;
-    color: black;
-}
-.verticle-line a{
-    margin-top: 30px;
-} */
-
 
 .join {
     color: black;
@@ -801,90 +586,71 @@ div#slider figure {
     font-size: 18px;
     font-weight: 500;
 }
-    
 
-
- @media(max-width: 1270px){
-    header{
-        padding: 18px 4%;
-        transition: .2s;
-    }
-    header.sticky{
-        padding: 10px 4px;
-        transition: .2s;
-    }
-    .section{
-        padding: 80px 4%;
-        transition: .2s;
-    }
-
-    :root{
-        --big-font: 4.8rem;
-        --h2-font: 3.8rem;
-        --p-font: 1rem;
-        transition: .2s;
-    }
+.phone span{
+    color: black;
+    font-weight: 600;
 }
 
-@media(max-width:900px){
+@media(max-width: 425px ){
+
     .bar img{
         width: 100%;
-    }
-    .home{
-        height: 85vh;
-    }
-    .img{
-        height: auto;
-    }
-    
-    .actionBtns{
-        margin-top: 20px;
-        right: -60px;
+        display: none;
     }
 
-    .work{
+    #img2 , #img3 , #img4 {
         display: block;
     }
 
-    .work h1{
-        font-size: 50px;
-        width: 1000px;
-        margin: -20px auto;
-        text-align:justify;
+    #img3{
+        width: 160px;
+        margin-left: 265px;
+        padding-top: 55px;
+        height: 108px;
     }
 
-    .about h1{
-        text-align: justify;
+    #img4{
+        width: 160px;
+        padding-top: 50px;
+        height: 110px;
+        margin-left: 50px;
     }
 
-    .about img{
-        padding-left: 20px;
+    .home{
+        height: 383px;
     }
 
-    .service h1{
-        text-align: justify;
+    .home-text{
+        top: -180px;
     }
 
-    #menu-icon{
-        display: initial;
+    .home-text h1 {
+        padding-top: 150px;
+    }
+
+    .home-text h1, .home-text h3 {
+        font-size: 15px;
+    }
+
+    .navbar a{
+        display: none;
     }
 
     .navbar{
+        width: 425px;
         position: absolute;
         top: -700px;
-        left: 0;
-        right: 0;
         flex-direction: column;
         background: var(--bg-color);
-        text-align: left;
         transition: all .30s;
+        margin: auto;
     }
 
     .navbar a{
         display: block;
-        padding: 1.1rem;
-        margin: 1.3rem;
-        border-left: 2px dotted var(--text-color);
+        padding: -1.1rem;
+        margin-left: -265px;
     }
 
     .navbar a:hover{
@@ -894,4 +660,290 @@ div#slider figure {
         top: 100%;
     }
 
-} 
+    #menu-icon{
+        font-size: 32px;
+        color: var(--text-color);
+        cursor: pointer;
+        margin-top: 60px;
+        display: block;
+        margin-left: 4px;
+    }
+
+    .login{
+        display: flex;
+        padding-top: 5px;
+        margin-left: 215px;
+    }
+
+    .work{
+        width: 100%;
+        height: 680px;
+        padding-top: 0px;
+    }
+    .work h1{
+        text-align: justify;
+        margin-left: 50px;
+        font-size: 40px;
+    }
+
+    .work-item .work-img{
+        margin-bottom: 20px;
+    }
+
+    .work-item .work-img img{
+        margin-left: 175px;
+    }
+
+    .about{
+        width: 100%;
+        height: 910px;
+
+    }
+    .about h1 {
+        text-align: justify;
+        font-size: 40px;
+        margin-left: 50px;
+    }
+
+    .about p{
+        font-size: small;
+        text-indent: 50px;
+    }
+
+    .wrap{
+        padding: 20px;
+    }
+
+    .about img{
+        margin-left: 40px;
+        margin-right: 0;
+        
+    }
+
+    .about a img{
+        padding-top: 40px;
+        height: 150px ;
+        margin-left: 40px;
+
+    }
+
+    #hover-img:hover{
+    width: 290px;
+    height: 150px;
+    transition: 0.6s ease-out;
+    }
+
+    .service{
+        width: 100%;
+        height: 1780px;
+    }
+
+    .service h1{
+        text-align: justify;
+        margin-left: 50px;
+        font-size: 40px;
+    }
+
+    .contact a{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .phone span{
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+    }
+
+}
+
+@media(min-width:426px) and (max-width:768px){
+    .login{
+        margin-left: 316px !important;
+    }
+
+    .home-text{
+        top:-95px;
+    }
+
+    .work{
+        padding-top: 0;
+        height: 400px !important;
+    }
+
+    .work-img img{
+        margin-left: 135px !important;
+        width: 35px !important;
+    }
+
+    .about{
+        height: 730px !important ;
+    }
+
+    .about img{
+        margin-left: 205px !important;
+    }
+
+    #hover-img{
+        margin-left: 205px !important;
+    }
+
+
+    .service{
+        height: 1780px !important;
+    }
+}
+
+  @media(min-width: 426px) and (max-width: 1024px){ 
+    .bar img{
+        width:100%;
+    }
+
+    .home{
+        height: 525px;
+    }
+    .home-text h1 {
+        padding-top: -180px;
+    }
+
+    .home-text h1, .home-text h3 {
+        font-size: 15px;
+    }
+
+    .navbar a{
+        display: none;
+    }
+
+    .navbar{
+        width: 100%;
+        position: absolute;
+        top: -700px;
+        flex-direction: column;
+        background: var(--bg-color);
+        transition: all .30s;
+        margin: auto;
+    }
+
+    .navbar a{
+        display: block;
+        padding: -1.1rem;
+        margin-left: -265px;
+    }
+
+    .navbar a:hover{
+        background: burlywood;
+    }
+    .navbar.active{
+        top: 100%;
+    }
+
+    #menu-icon{
+        font-size: 32px;
+        color: var(--text-color);
+        cursor: pointer;
+        margin-top: 70px;
+        display: block;
+        margin-left: 246px;
+    }
+
+    .login{
+        margin-left: 543px;
+    }
+
+    .work{
+        width: 100%;
+        height: 353px;
+    }
+    .work h1{
+        padding-top: 14px;
+        margin-left: 50px;
+        font-size: 30px;
+    }
+
+    .work-item{
+        margin-left: 125px;
+        
+    }
+
+    .work-item .work-img{
+        margin-bottom: 20px;
+    }
+
+    .work-item .work-img img{
+        margin-left: 200px;
+        width: 25px;
+    }
+
+    .about{
+        width: 100%;
+        padding-top: 80px;
+        height: 500px;
+    }
+    .about h1 {
+        font-size: 30px;
+        margin-left: -14px;
+    }
+
+    .about p{
+        font-size: small;
+        text-indent: 50px;
+    }
+
+    .about img{
+        margin-left: 40px;
+        
+    }
+
+    .about a img{
+        padding-top: 40px;
+        height: 150px ;
+        margin-left: 160px;
+
+    }
+
+    .wrap{
+        padding: 20px;
+    }
+
+    .wrap p{
+        font-size: medium;
+    }
+
+    #hover-img{
+        margin-right: 40px;
+    }
+
+    #hover-img:hover{
+    width: 290px;
+    height: 150px;
+    transition: 0.6s ease-out;
+    }
+
+    .service{
+        width: 100%;
+        height: 950px;
+    }
+
+    .service h1{
+        margin-left: -14px;
+        font-size: 40px;
+    }
+
+    .footer-item{
+        padding:33px;
+    }
+
+    .footer-text h3 {
+        margin-left: -100px;
+        font-size: 35px;
+    }
+
+    .contact{
+        margin-left: 200px;
+    }
+
+    .footer-item{
+        grid-template-columns: repeat(auto-fit, minmax(325px, auto));
+      }
+
+}  

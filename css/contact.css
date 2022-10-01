@@ -34,6 +34,10 @@ body{
     border-radius: 0;
 }
 
+#img2 , #img3 , #img4 {
+    display: none;
+}
+
 /*logo*/
 header{
     width: 100%;
@@ -93,6 +97,8 @@ header{
 
 .login a{
     margin-right: 15px;
+    color: #fff !important;
+    text-decoration: none;
 }
 
 a{
@@ -109,20 +115,6 @@ a{
     font-weight: 800;
     padding: 5px;
 }
-
-/* .content-email{
-    position: absolute;
-    right: 26px;
-    top: 43px;
-    width: auto;
-    color: yellow;
-    font-size: 13px;
-}
-
-.content-email img{
-    width: 30px;
-    margin-right: 10px;
-} */
 
 .icon, .content-text{
     display: table-cell;
@@ -160,11 +152,6 @@ a{
     margin-top: 140px;
 }
 
-/* .back a{
-    color: black;
-    text-decoration: none;
-} */
-
 .text{
     font-size: 30px;
     color: rgb(237, 59, 59);
@@ -182,60 +169,152 @@ a{
 .contact{
     display: flex;
     border-radius: 5px;
-    /* background-color: #f2f2f2; */
     padding-top: 30px;
     padding-bottom: 20px;
 }
-/* .contact-form{
-    margin-left: 40px;
-} */
 
 .map{
     margin-right: 40px;
     padding-top: 28px;
 }
 
-/* input[type=text], textarea{
-    width: 100%; 
-    padding: 10px;
-    border: 1px solid #ccc; 
-    border-radius: 20px; 
-    box-sizing: border-box; 
-    margin-top: 6px;
-    margin-bottom: 16px; 
-    resize: vertical ;
-  }   */
-   
-  /* Style the submit button with a specific background color etc */
-  /* input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 7px 18px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    height: 35px;
-    margin-left: 380px;
-  } */
+@media(max-width: 425px){
 
-  /* .contact-form label{
-    color: black;
-  }
+    #img2 , #img3 , #img4 {
+        display: block;
+      }
+      
+      #img3{
+        width: 160px;
+        margin-left: 265px;
+        padding-top: 55px;
+        height: 108px;
+      }
+      
+      #img4{
+        width: 160px;
+        padding-top: 50px;
+        height: 110px;
+        margin-left: 50px;
+      }
 
-  .contact-form span{
-    color: red;
-  } */
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  /* input[type=submit]:hover {
-    background-color: blue;
-  }
+    .bar img{
+    width: 425px;
+    display: none;
+    }
 
-.contact input:hover{
-    border: 2px solid rgb(74, 74, 240);
+    .navbar a{
+        display: none;
+    }
+
+    .navbar{
+        width: 425px;
+        position: absolute;
+        top: -700px;
+        flex-direction: column;
+        background: #f6d322;
+        transition: all .30s;
+        margin: auto;
+    }
+
+    .navbar a{
+    display: block;
+    padding: -1.1rem;
+    margin-left: -265px;
+    }
+
+    .navbar a:hover{
+        background: burlywood;
+    }
+    .navbar.active{
+        top: 100%;
+    }
+
+    #menu-icon{
+        font-size: 32px;
+        color: var(--text-color);
+        cursor: pointer;
+        margin-top: 60px;
+        display: block;
+        margin-left: 4px;
+      }
+      .login{
+        display: flex;
+        margin-left: 215px;
+        padding-top: 0;
+    }
+
+    .contact-page{
+        height: 85px;
+    }
+    .contact{
+        display: block;
+    }
+
+    .address{
+        font-size: 10px;
+    }
+
+    /* #contact span{
+        font-size: 10px;
+    } */
 }
 
-.contact textarea:hover{
-    border: 2px solid rgb(74, 74, 240);
- }  */
 
+@media (min-width:426px) and (max-width: 768px){
+    .login{
+        margin-left: 330px !important;
+    }
+
+    .navbar{
+        padding-left: 490px !important;
+    }
+}
+
+@media(min-width:426px) and (max-width:1024px){
+    .bar img{
+        width: 100%;
+      }
+      .navbar a{
+        display: none;
+      }
+    
+      .navbar{
+        width: 100%;
+        position: absolute;
+        top: -700px;
+        flex-direction: column;
+        background: #f6d322;
+        transition: all .30s;
+        margin: auto;
+    }
+    
+      .navbar a{
+          display: block;
+          padding: -1.1rem;
+          margin-left: -265px;
+      }
+    
+      .navbar li{
+        margin-left: -580px;
+      }
+      .navbar a:hover{
+          background: burlywood;
+      }
+      .navbar.active{
+          top: 100%;
+      }
+    
+      #menu-icon{
+        font-size: 32px;
+        color: var(--text-color);
+        cursor: pointer;
+        margin-top: 70px;
+        display: block;
+        margin-left: 246px;
+    }
+    
+    .login{
+        margin-left: 543px;
+    }
+}
