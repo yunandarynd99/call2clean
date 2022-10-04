@@ -1,0 +1,34 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media(max-width: 425px){
+    .bar img{
+        width: 425px;
+    }
+
+}
+
+@media(min-width: 426px) and (max-width:768px){
+    .bar img{
+        width: 768px;
+    }
+
+    .info-detail-details{
+        margin-left: 150px !important;
+    }
+
+    .navbar{
+        padding-left: 490px !important;
+    }
+}
+
+@media(min-width:426px) and (max-width:1024px){
+    .info-detail-details{
+        margin-left: 70px;
+    }
+
+    .navbar li{
+        margin-left: -580px !important;
+    }
+}

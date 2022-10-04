@@ -150,7 +150,7 @@ a{
 /*activity*/
 .activity{
   padding-top: 140px;
-  height: 635px;
+  height: 670px;
   border-bottom: 2px double skyblue;
 }
 
@@ -331,8 +331,8 @@ img{
   font-weight:bold;
   color:white;
   cursor: pointer;
-  padding-top: 156px;
-  margin-right: 445px;
+  padding-top: 140px;
+  margin-right: 450px;
   }
   .container1 {
   width:200px;
@@ -360,7 +360,7 @@ img{
   /* csr */
   .csr{
     padding-top: 20px;
-    height: 740px;
+    height: 1080px;
     border-bottom: 2px solid skyblue;
   }
 
