@@ -2,7 +2,35 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-@media(max-width: 425px){
+.row{
+    margin-right: 0 !important;
+}
+
+@media(max-width:375px){
+
+    .bar img{
+        width: 375px;
+    }
+    .image1{
+        padding-left: 20px;
+        border-radius: 10%;
+        margin-top: 50px;
+        width: 350px;
+        height: 200px;
+    }
+
+    .image{
+        width: 350px;
+        height: 200px;
+    }
+
+    .image2{
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media(min-width: 376px) and (max-width: 425px){
     .bar img{
         width: 425px;
     }

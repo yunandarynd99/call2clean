@@ -178,7 +178,91 @@ a{
     padding-top: 28px;
 }
 
-@media(max-width: 425px){
+@media(max-width:375px){
+    .bar img{
+        width: 100%;
+        display: none;
+    }
+    
+    #img2 , #img3 , #img4 {
+        display: block;
+    }
+    
+    #img3{
+        width: 150px;
+        margin-left: 225px;
+        padding-top: 55px;
+        height: 108px;
+    }
+    
+    #img4{
+        width: 150px;
+        padding-top: 50px;
+        height: 110px;
+        margin-left: 60px;
+    }
+    
+    .home{
+        height: 383px;
+    }
+    
+    .home-text{
+        top: -180px;
+    }
+    
+    .home-text h1 {
+        padding-top: 150px;
+    }
+    
+    .home-text h1, .home-text h3 {
+        font-size: 15px;
+    }
+    
+    .navbar a{
+        display: none;
+    }
+    
+    .navbar{
+        width: 425px !important;
+        position: absolute !important;
+        top: -700px !important;
+        flex-direction: column !important;
+        background: #f6d322 !important;
+        transition: all .30s !important;
+        margin: auto !important;
+    }
+    
+    .navbar a{
+        display: block !important;
+        padding: -1.1rem !important;
+        margin-left: -265px !important;
+    }
+    
+    .navbar a:hover{
+        background: burlywood !important;
+    }
+    .navbar.active{
+        top: 100% !important;
+    }
+    
+    
+    #menu-icon{
+        font-size: 32px;
+        color: var(--text-color);
+        cursor: pointer;
+        margin-top: 60px;
+        display: block;
+        margin-left: 20px;
+    }
+    
+    .login{
+        display: flex;
+        padding-top: 0px;
+        margin-left: 155px;
+    }
+}
+
+@media (min-width:376px) and (max-width: 425px){
 
     #img2 , #img3 , #img4 {
         display: block;
