@@ -6,7 +6,28 @@
     margin-right: 0 !important;
 }
 
-@media(max-width:375px){
+@media(max-width:360px){
+
+    .login{
+        padding-top: 7px;
+    }
+
+    .image{
+        width: 340px;
+        height: 230px;
+    }
+    .image1{
+        width: 340px;
+        height: 230px;
+    }
+
+    .image2{
+        width: 340px;
+        height: 230px;
+    }
+}
+
+@media(min-width:361px) and (max-width:375px){
 
     .bar img{
         width: 375px;
