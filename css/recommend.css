@@ -15,7 +15,7 @@
 }
 
 body{
-  background-color: wheat;
+  background: #f4f4a4;
 }
 
 /*bar*/
@@ -153,12 +153,12 @@ a{
 /* recommend */
 .recommend{
   padding-top: 147px;
-  border-bottom: 2px solid skyblue;
+  border-bottom: 2px solid gray;
 }
 
 .recommend h1{
   text-align: center;
-  color: rgb(237, 59, 59);
+  color: darkgray;
   font-size: 30px;
   margin-bottom: 30px;
   
@@ -179,7 +179,7 @@ a{
   text-align: center;
   font-size: 30px;
   padding-top: 40px;
-  color: orange;
+  color: darkgray;
 }
 
 .footer-item{
@@ -193,7 +193,7 @@ a{
 }  
 
 .link{
-  color: black;
+  color: gray;
   margin-bottom: 10px;
   padding-left: 30px;
 }
@@ -203,7 +203,7 @@ a{
 }
 
 .link a{
-  color: black;
+  color: gray;
 }
 
 .join p{
@@ -217,7 +217,7 @@ a{
 
 
 .join {
-  color: black;
+  color: gray;
 }
 
 
@@ -235,23 +235,23 @@ a{
 }
 
 .email h4{
-  color: black;
+  color: gray;
   font-size: 20px;
 }
 
 .contact a{
-  color: black;
+  color: gray;
   font-size: 18px;
   font-weight: 500;
 }
 
 .phone h4{
-  color: black;
+  color: gray;
   font-size: 20px;
 }
 
 .phone span{
-  color: black;
+  color: gray;
   font-size: 18px;
   font-weight: 500;
 }
@@ -320,7 +320,7 @@ a{
       background: burlywood !important;
   }
   .navbar.active{
-      top: 100% !important;
+      top: 135% !important;
   }
  
 
@@ -370,6 +370,14 @@ a{
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.5px;
+}
+
+.join{
+  margin-left: 10px;
+}
+
+.contact{
+  margin-left: 10px;
 }
 
 .footer-item{
@@ -442,7 +450,7 @@ a{
     background: burlywood !important;
 }
 .navbar.active{
-    top: 100% !important;
+    top: 135% !important;
 }
 
 
@@ -481,13 +489,17 @@ a{
   font-weight: 600;
   letter-spacing: 0.5px;
 }
+
+.join{
+  margin-left: 10px;
+}
+
+.contact{
+  margin-left: 10px;
+}
 }
 
 @media (min-width:376px) and (max-width: 425px){
-  /* header{
-    height: 80px;
-    background: linear-gradient(360deg, #f6d322, #178407);
-} */
   .bar img{
     width: 100%;
     display: none;
@@ -535,7 +547,7 @@ a{
     background: burlywood;
 }
 .navbar.active{
-    top: 100%;
+    top: 135%;
 }
 
   #menu-icon{
@@ -578,6 +590,14 @@ margin-right: 28px;
     font-weight: 500;
     letter-spacing: 1.5px;
 }
+
+.join{
+  margin-left: 10px;
+}
+
+.contact{
+  margin-left: 10px;
+}
 }
 
 @media (min-width:426px) and (max-width: 768px){
@@ -585,12 +605,67 @@ margin-right: 28px;
     margin-left: 300px !important;
   }
 
+  .navbar a{
+    display: none;
+}
+
+.navbar{
+    width: 425px !important;
+    position: absolute !important;
+    top: -700px !important;
+    flex-direction: column !important;
+    background: #f6d322 !important;
+    transition: all .30s !important;
+    margin: auto !important;
+}
+
+.navbar a{
+    display: block !important;
+    padding: -1.1rem !important;
+    margin-left: -265px !important;
+}
+
+.navbar a:hover{
+    background: burlywood !important;
+}
+.navbar.active{
+    top: 133% !important;
+}
+
+
+#menu-icon{
+    font-size: 32px;
+    color: var(--text-color);
+    cursor: pointer;
+    margin-top: 60px;
+    display: block;
+    margin-left: 230px;
+}
+
+
   .box img{
     margin-left: 80px !important;
   }
+
+  .footer-item{
+    padding:33px;
 }
 
-@media(min-width: 426px) and (max-width: 1024px){
+.footer-text h3 {
+    margin-left: -100px;
+    font-size: 35px;
+}
+
+.contact{
+    margin-left: 200px;
+}
+
+.footer-item{
+    grid-template-columns: repeat(auto-fit, minmax(325px, auto));
+  }
+}
+
+@media(min-width: 769px) and (max-width: 1024px){
   .bar img{
     width: 100%;
   }
@@ -599,7 +674,7 @@ margin-right: 28px;
   }
 
   .navbar{
-      width: 100%;
+      width: 600px;
       position: absolute;
       top: -700px;
       flex-direction: column;
@@ -618,7 +693,7 @@ margin-right: 28px;
       background: burlywood;
   }
   .navbar.active{
-      top: 100%;
+      top: 122%;
   }
 
   #menu-icon{
